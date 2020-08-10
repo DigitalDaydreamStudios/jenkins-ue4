@@ -48,7 +48,7 @@ echo "==============================================="
 echo "Archiving the artifact..."
 echo "==============================================="
 
-& Compress-Archive -Path "$env:buildlocation" -DestinationPath "$env:projectpath/Build/$env:archivename.zip"
+& Compress-Archive -Path "$env:buildlocation" -DestinationPath "$env:projectpath/Build/$env:archivename.zip" -Force
 
 echo "Archive created..."
 
