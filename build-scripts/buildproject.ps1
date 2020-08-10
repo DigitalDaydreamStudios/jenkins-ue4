@@ -28,6 +28,8 @@ echo "Running on $env:MACMINI..."
 	echo "==============================================="
 }
 
+& echo get-location
+
 & "$env:enginepath\$env:engineversion\Engine\Binaries\DotNET\UnrealBuildTool.exe" -projectfiles -project="$env:projectpath\$env:projectname.uproject" -game -rocket -progress
 
 echo "==============================================="
