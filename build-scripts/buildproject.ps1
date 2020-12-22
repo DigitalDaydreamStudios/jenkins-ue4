@@ -52,4 +52,8 @@ echo "==============================================="
 
 echo "Archive created..."
 
+& Compress-Archive -Path  "$env:buildlocation" -DestinationPath "C:\Users\John\Dropbox\Build\$env:archivename.zip" -Force
+
+echo "Copying to Dropbox..."
+
 if(!$?) { Exit $LASTEXITCODE }
