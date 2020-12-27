@@ -53,7 +53,7 @@ echo "==============================================="
 
 echo "Archive created..."
 
-& Compress-Archive -Path  "$env:buildlocation" -DestinationPath "$env:backup" -Force
+& Compress-Archive -Path  "$env:buildlocation" -DestinationPath "$env:backup.zip" -Force
 
 echo "Copying to Dropbox..."
 
