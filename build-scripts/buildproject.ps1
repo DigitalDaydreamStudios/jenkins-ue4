@@ -14,7 +14,7 @@ echo "Running on $env:MACMINI..."
 	$env:runnerid="my-runner"
 	$env:branch="master"
 	$env:revision=$CI_PIPELINE_ID
-	$env:backup="C:\Users\John\Google Drive\Build\Fetchr_$env:revision"
+	$env:backup="C:\Users\John\Fetchr_$env:revision"
 
 	# archive directory
 	$env:archivename="Fetchr"
@@ -55,6 +55,6 @@ echo "Archive created..."
 
 & Compress-Archive -Path  "$env:buildlocation" -DestinationPath "$env:backup.zip" -Force
 
-echo "Copying to Dropbox..."
+echo "Copying to Google Drive..."
 
 if(!$?) { Exit $LASTEXITCODE }
