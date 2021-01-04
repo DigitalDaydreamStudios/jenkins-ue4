@@ -14,7 +14,7 @@ echo "Running on $env:MACMINI..."
 	$env:runnerid="my-runner"
 	$env:branch="master"
 	$env:revision=$CI_PIPELINE_ID
-	$env:backup="C:\Users\John\"
+	$env:backup="C:\Users\John\Google Drive\Build"
 
 	# archive directory
 	$env:archivename="Fetchr"
@@ -52,6 +52,8 @@ echo "==============================================="
 & Compress-Archive -Path "$env:buildlocation" -DestinationPath "$env:projectpath/Build/$env:archivename.zip" -Force
 
 echo "Archive created..."
+
+echo "$env:backup" >> $GITHUB_PATH
 
 & Compress-Archive -Path  "$env:buildlocation" -DestinationPath "$env:backup/Fetchr.zip" -Force
 
