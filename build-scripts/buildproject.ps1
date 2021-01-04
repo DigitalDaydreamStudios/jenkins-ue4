@@ -14,7 +14,7 @@ echo "Running on $env:MACMINI..."
 	$env:runnerid="my-runner"
 	$env:branch="master"
 	$env:revision=$CI_PIPELINE_ID
-	$env:backup="C:\Users\John\Google Drive\Build"
+	$env:backup="C:\actions-runner\_work\Backup"
 
 	# archive directory
 	$env:archivename="Fetchr"
