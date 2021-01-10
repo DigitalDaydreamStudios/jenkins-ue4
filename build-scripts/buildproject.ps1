@@ -13,7 +13,7 @@ echo "Running on $env:MACMINI..."
 	$env:buildconfig="Development"
 	$env:runnerid="my-runner"
 	$env:branch="master"
-	$env:revision=$CI_PIPELINE_ID
+	$env:revision=Get-Date
 	$env:backup="C:\actions-runner\_work\Backup"
 
 	# archive directory
