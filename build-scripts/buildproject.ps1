@@ -43,7 +43,7 @@ echo "==============================================="
 echo "Build and Cook..."
 echo "==============================================="
 
-& "$env:enginepath\$env:engineversion\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project="$env:projectpath\$env:projectname.uproject" -noP4 -platform=Win64 -clientconfig="$env:buildconfig" -cook -map=LEV_MainMenu+LEV_TUT_000+LEV_Main_001+LEV_Main_002 -build -stage -pak -archive -archivedirectory="$env:buildlocation"
+& "$env:enginepath\$env:engineversion\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project="$env:projectpath\$env:projectname.uproject" -noP4 -platform=Win64 -clientconfig="$env:buildconfig" -cook -allmaps -build -stage -pak -archive -archivedirectory="$env:buildlocation"
 
 echo "==============================================="
 echo "Archiving the artifact..."
