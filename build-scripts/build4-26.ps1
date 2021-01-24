@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-echo "Running on $env:MACMINI..."
+echo "Running on $env:MattMachine..."
 
 & {
 	echo "Preparing Runner Variables..."
@@ -8,16 +8,16 @@ echo "Running on $env:MACMINI..."
 	# required runner variables
 	$env:enginepath="C:\Program Files\Epic Games"
 	$env:projectname="Fetchr"
-	$env:engineversion="UE_4.25"
-	$env:projectpath="C:\actions-runner\_work\Fetchr\Fetchr"
+	$env:engineversion="UE_4.26"
+	$env:projectpath="C:\GameJam2021ActionsRunner\_work\GlobalGameJam2021\"
 	$env:buildconfig="Development"
 	$env:runnerid="my-runner"
 	$env:branch="master"
 	$env:revision=Get-Date -Format "yyyyMMddTHHmmssffff"
-	$env:backup="C:\actions-runner\_work\Backup"
+	$env:backup="C:\GameJam2021ActionsRunner\_work\backup"
 
 	# archive directory
-	$env:archivename="Fetchr"
+	$env:archivename="GameJam2021"
 	$env:buildlocation="$env:projectpath\Build\$env:projectname"
 
 	echo "==============================================="
