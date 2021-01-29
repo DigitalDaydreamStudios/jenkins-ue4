@@ -7,12 +7,12 @@ echo "Running on $env:MattMachine..."
 	
 	# required runner variables
 	$env:enginepath="C:\Program Files\Epic Games"
-	$env:projectname="Fetchr"
+	$env:projectname="Where'sGrandpa"
 	$env:engineversion="UE_4.26"
 	$env:projectpath="C:\GameJam2021ActionsRunner\_work\GlobalGameJam2021\"
 	$env:buildconfig="Development"
 	$env:runnerid="my-runner"
-	$env:branch="master"
+	$env:branch="main"
 	$env:revision=Get-Date -Format "yyyyMMddTHHmmssffff"
 	$env:backup="C:\GameJam2021ActionsRunner\_work\backup"
 
