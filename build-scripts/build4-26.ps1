@@ -7,7 +7,7 @@ echo "Running on $env:MattMachine..."
 	
 	# required runner variables
 	$env:enginepath="C:\Program Files\Epic Games"
-	$env:projectname="Where'sGrandpa"
+	$env:projectname="WheresGrandpa"
 	$env:engineversion="UE_4.26"
 	$env:projectpath="C:\GameJam2021ActionsRunner\_work\GlobalGameJam2021\"
 	$env:buildconfig="Development"
