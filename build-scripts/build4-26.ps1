@@ -55,7 +55,7 @@ echo "Archive created..."
 
 echo "$env:backup" >> $GITHUB_PATH
 
-& Compress-Archive -Path  "$env:buildlocation" -DestinationPath "$env:backup/Fetchr_$env:revision.zip" -Force
+& Compress-Archive -Path  "$env:buildlocation" -DestinationPath "$env:backup/WheresGrandpa$env:revision.zip" -Force
 
 echo "Copying to Google Drive..."
 
