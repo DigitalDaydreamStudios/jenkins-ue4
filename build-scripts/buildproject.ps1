@@ -1,4 +1,4 @@
-param ($UnRealVersion)
+param ($branch_name)
 
 $ErrorActionPreference = "Stop"
 
@@ -10,7 +10,7 @@ echo "Running on $env:MACMINI..."
 	# required runner variables
 	$env:enginepath="C:\Program Files\Epic Games"
 	$env:projectname="Fetchr"
-	$env:engineversion=$Args[0]
+	$env:engineversion=UE_4.25
 	$env:projectpath="C:\actions-runner\gitActionsBuild\Fetchr\Fetchr"
 	$env:buildconfig="Development"
 	$env:runnerid="my-runner"
@@ -28,6 +28,7 @@ echo "Running on $env:MACMINI..."
 	echo "Using build configuration: $env:buildconfig..."
 	echo "Using runner $env:runnerid for this job..."
 	echo "Archive name: $env:archivename"
+	echo "$branch_name
 	echo "==============================================="
 }
 
