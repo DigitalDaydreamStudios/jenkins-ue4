@@ -1,4 +1,4 @@
-param ($UNRealVersion)
+param ($UnRealVersion)
 
 $ErrorActionPreference = "Stop"
 
@@ -10,7 +10,7 @@ echo "Running on $env:MACMINI..."
 	# required runner variables
 	$env:enginepath="C:\Program Files\Epic Games"
 	$env:projectname="Fetchr"
-	$env:engineversion=$UNRealVersion
+	$env:engineversion=$UnRealVersion
 	$env:projectpath="C:\actions-runner\gitActionsBuild\Fetchr\Fetchr"
 	$env:buildconfig="Development"
 	$env:runnerid="my-runner"
