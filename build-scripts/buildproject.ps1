@@ -28,7 +28,7 @@ echo "Running on $env:MACMINI..."
 	echo "Using build configuration: $env:buildconfig..."
 	echo "Using runner $env:runnerid for this job..."
 	echo "Archive name: $env:archivename"
-	echo "$branch_name
+	echo "$branch_name"
 	echo "==============================================="
 }
 
