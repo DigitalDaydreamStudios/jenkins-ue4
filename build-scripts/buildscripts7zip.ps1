@@ -8,10 +8,10 @@ echo "Running on $env:MACMINI..."
 	echo "Preparing Runner Variables..."
 	
 	# required runner variables
-	$env:enginepath="C:\Users\rocks\Editors" 
+	$env:enginepath="C:\Program Files\Epic Games" 
 	$env:projectname="Fetchr"
 	$env:engineversion="UE_4.25"
-	$env:projectpath="C:\Users\rocks\RiderProjects\Fetchr\"
+	$env:projectpath="C:\actions-runner\gitActionsBuild\Fetchr\Fetchr"
 	$env:buildconfig="Development"
 	$env:runnerid="my-runner"
 	$env:branch="master"
@@ -20,7 +20,7 @@ echo "Running on $env:MACMINI..."
 
 	# archive directory
 	$env:archivename="Fetchr"
-	$env:buildlocation="C:\Users\rocks\Builds\Fetchr"
+	$env:buildlocation="$env:projectpath\Build\$env:projectname"
 
 	echo "==============================================="
 	echo "Starting build for project $env:projectname..."
