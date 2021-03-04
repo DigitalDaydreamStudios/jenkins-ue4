@@ -54,7 +54,7 @@ echo "==============================================="
 
 #& Compress-Archive -Path "$env:buildlocation" -DestinationPath "$env:projectpath/Build/$env:archivename.zip" -Force
 
-& "C:\Program Files\7-Zip\7z.exe" -mx=5 a $env:backup/$env:archivename_$env:revision.zip $env:buildlocation\WindowsNoEditor
+& "C:\Program Files\7-Zip\7z.exe" -mx=5 a $env:backup/Fetchr_$env:revision.zip $env:buildlocation\WindowsNoEditor
 
 echo "Archive created... Copying to Google Drive..."
 
